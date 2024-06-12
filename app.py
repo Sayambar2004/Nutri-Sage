@@ -1,5 +1,4 @@
 #Import libraries
-from dotenv import load_dotenv
 import os
 import google.generativeai as genai
 from PIL import Image
@@ -7,7 +6,6 @@ import streamlit as st
 
 
 #Load API Key
-load_dotenv()
 genai.configure(api_key='AIzaSyC-1-XnvZwyn5nGLy0G8wf-KvD7XZzzaJQ')
 
 def get_response_diet(prompt, input):
