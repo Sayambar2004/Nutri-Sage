@@ -8,7 +8,7 @@ import streamlit as st
 
 #Load API Key
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key='AIzaSyC-1-XnvZwyn5nGLy0G8wf-KvD7XZzzaJQ')
 
 def get_response_diet(prompt, input):
     model = genai.GenerativeModel('gemini-pro')
